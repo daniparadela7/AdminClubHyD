@@ -1,0 +1,33 @@
+<div class="modalCrearNosotros">
+    <div class="modal-header text-center">
+        <h3 class="modal-title">Añadir Personal</h3>
+    </div>
+    <div class="modal-body">
+        <form ng-submit="crearNosotros()">
+            <div class="row">
+                <div class="col-md-offset-1 col-md-10 configuracion-inicial">
+                    <div class="input-registro col-md-12">
+                        <label>Nombre:</label>
+                        <input type="text" class="form-control" ng-model="nombre" required>
+                    </div>
+                    <div class="input-registro col-md-12">
+                        <label>Descipción:</label>
+                        <div text-angular ng-model="descripcion"></div>
+                    </div>
+                    <div class="input-registro col-md-12">
+                        <label>Función:</label>
+                         <input type="text" class="form-control" ng-model="funcion">
+                    </div>
+                    <div class="input-registro col-md-5">
+                        <label>Imagen Personal:</label>
+                        <input type="file" ng-model="imagen" base-sixty-four-input>
+                        <span ng-show="form.files.$error.maxsize">La imagen no puede ocupar más de 9000 KB</span>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" type="submit">Aceptar</button>
+            </div>
+        </form>
+    </div>
+</div>

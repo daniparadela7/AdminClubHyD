@@ -1,0 +1,13 @@
+<div class="modalEliminarAlbum">
+    <div class="modal-header text-center">
+        <h3 class="modal-title">Eliminar Álbum: {{album.nombre}}</h3>
+    </div>
+    <div class="modal-body text-center">
+        <p class="text-center">¿Seguro que quieres eliminar el álbum <span>{{album.nombre}}</span> ?</p>
+        <p><span>Todas las imágenes de este álbum serán eliminadas!!</span>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary" ng-click="cancelar()" type="submit">Cancelar</button>
+        <button class="btn btn-primary" ng-click="eliminarAlbum()" type="submit">Aceptar</button>
+    </div>
+</div>

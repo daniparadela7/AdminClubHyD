@@ -1,0 +1,26 @@
+a.site_title{
+	padding: 10px;
+	text-align: center;
+	height: 100px;
+	line-height: 24px;
+	span{
+		padding-left: 7px;
+	}
+}
+.profile_infor{
+	color: #fff;
+	padding: 30px 0;
+}
+.left_col{
+	height: 100%;
+}
+.sidebar-footer{
+	background: #172D44 !important;
+	z-index: 9999;
+	a{
+		cursor: pointer;
+	}
+	.mover-derecha{
+		float: right;
+	}
+}

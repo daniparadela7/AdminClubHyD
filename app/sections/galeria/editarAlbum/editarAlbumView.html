@@ -1,0 +1,38 @@
+<section class="container-content editar-album">
+	<section class="info">
+		<div class="row"> 
+			<div class="col-md-12 section-cumple">
+				<h1 class="titulo-principal text-center">Editar Álbum</h1>
+			</div>
+			<form ng-submit="editarAlbum()">
+	            <div class="row">
+	                <div class="col-md-offset-1 col-md-10 configuracion-inicial">
+	                    <div class="input-registro col-md-12">
+	                        <label>Nombre:</label>
+	                        <input type="text" class="form-control" ng-model="album.nombre" required>
+	                    </div>
+	                    <div class="input-registro col-md-12">
+	                        <label>Imagen Álbum:</label>
+	                        <input type="file" ng-model="album.imagen" base-sixty-four-input>
+	                    </div>
+	                    <div class="input-registro col-md-12">
+	                        <label>Imágenes:</label>
+	                        <div class="clearfix"></div>
+	                        <div class="imagen-album col-md-2 text-center" ng-repeat="imagenAlbum in imagenesAlbum">
+								<img class="text-center" ng-src="{{'data:' + imagenAlbum.imagen[0].filetype + ';base64,' + imagenAlbum.imagen[0].base64}}">
+								<div class="clearfix"></div>
+								<i ng-click="eliminarImagen(imagenAlbum._id)" class="fa fa-close delete"></i>
+	                        </div>
+	                        <div class="col-md-12 boton-form">
+		                        <a class="btn btn-md btn-primary" ng-click="addImagen('lg', album.pretty_url)">Añadir Imagen</a>
+		                    </div>
+	                    </div>
+	                    <div class="col-md-12 boton-form text-center">
+	                        <button class="btn btn-md btn-primary" type="submit">Editar Álbum</button>
+	                    </div>
+	                </div>
+	            </div>
+	        </form>
+		</div>
+	</section>
+</section>

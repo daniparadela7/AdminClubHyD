@@ -1,0 +1,13 @@
+<div class="modalEliminarCafeteria">
+    <div class="modal-header text-center">
+        <h3 class="modal-title">Eliminar Imagen</h3>
+    </div>
+    <div class="modal-body text-center">
+        <p class="text-center">¿Seguro que quieres eliminar esta imagen?</p>
+        <img ng-src="{{'data:' + cafeteria.imagen[0].filetype + ';base64,' + cafeteria.imagen[0].base64}}">
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary" ng-click="cancelar()" type="submit">Cancelar</button>
+        <button class="btn btn-primary" ng-click="eliminarCafeteria()" type="submit">Aceptar</button>
+    </div>
+</div>

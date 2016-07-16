@@ -1,0 +1,22 @@
+.recover{
+	width: 400px;
+	height: 350px;
+	margin: 0 auto;
+	margin-top: 200px;
+	background-color: #fff;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+	.info{
+		padding: 20px;
+		h1{
+			font-size: 27px;
+			text-align: center;
+			font-weight: 500;
+		}
+		.input-registro{
+			padding: 40px 0;
+		}
+		.boton-form{
+			padding: 20px;
+		}
+	}
+}

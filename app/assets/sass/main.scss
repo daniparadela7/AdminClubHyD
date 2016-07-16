@@ -1,0 +1,53 @@
+$icon-font-path: '/assets/fonts/';
+
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "bower_components/components-font-awesome/scss/font-awesome.scss";
+@import "bower_components/sass-material-colors/sass/_sass-material-colors.scss";
+@import "bower_components/font-awesome/scss/font-awesome.scss";
+// endbower
+
+//MIXINS
+@import "mixins/_hamburger.scss";
+@import "mixins/_sticky-footer.scss";
+
+//PAGES
+@import "../../sections/header/_header.scss";
+@import "../../sections/footer/_footer.scss";
+@import "../../sections/login/_login.scss";
+@import "../../sections/recover/_recover.scss";
+@import "../../sections/home/_home.scss";
+@import "../../sections/noticias/_noticias.scss";
+@import "../../sections/nosotros/_nosotros.scss";
+@import "../../sections/cafeteria/_cafeteria.scss";
+@import "../../sections/galeria/_galeria.scss";
+
+
+.container-content{
+	padding-left: 280px;
+	padding-top: 50px;
+	padding-right: 50px;
+}
+
+a, a:hover, a:focus{
+	text-decoration: none;
+}
+
+li{
+	list-style-type: none;
+}
+
+#wrapper{
+	font-family: 'Open Sans', Arial, sans-serif;
+	width: 100%;
+	background: #fff;
+	color: #555;
+	font-size: 14px;
+	font-weight: 300;
+	overflow: hidden;
+	line-height: 1.75;
+}
+
+.wrapper-login{
+	background: #34495E !important;
+}

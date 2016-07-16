@@ -1,0 +1,46 @@
+.noticias{
+	.crear-noticia{
+		padding-top: 20px;
+		float: right;
+		i{
+			padding-right: 7px;
+			cursor: pointer;
+		}
+	}
+	.table-responsive{
+		padding-top: 30px;
+		th{
+			text-align: center;
+		}
+		td{
+			font-size: 15px;
+			i{
+				font-size: 20px;
+				cursor: pointer;
+				&.delete{
+					color: red;
+				}
+			}
+		}
+	}
+}
+
+.modalCrearNoticia, .editar-noticia, .modalEliminarNoticia{
+	.ta-editor.ta-html, .ta-scroll-window.form-control{
+		min-height: 150px !important;
+		height: 225px;
+	}
+	font-size: 15px;
+	color: #555;
+	.input-registro{
+		padding: 10px;
+	}
+}
+
+.modalEliminarNoticia{
+	p{
+		span{
+			font-weight: 700;
+		}
+	}
+}

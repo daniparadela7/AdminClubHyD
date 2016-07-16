@@ -1,0 +1,65 @@
+.galeria{
+	.crear-galeria{
+		padding-top: 20px;
+		float: right;
+		i{
+			padding-right: 7px;
+			cursor: pointer;
+		}
+	}
+	.table-responsive{
+		padding-top: 30px;
+		th{
+			text-align: center;
+		}
+		td{
+			font-size: 15px;
+			i{
+				font-size: 20px;
+				cursor: pointer;
+				&.delete{
+					color: red;
+				}
+			}
+			img{
+				width: 100px;
+			}
+		}
+	}
+}
+
+.modalCrearAlbum, .editar-album, .modalEliminarAlbum{
+	font-size: 15px;
+	color: #555;
+	.input-registro{
+		padding: 10px;
+	}
+}
+
+.editar-album{
+	.imagen-album{
+		padding: 20px;
+		img{
+			max-width: 180px;
+			margin: 0 auto;
+		}
+		i{
+			font-size: 20px;
+			color: red;
+			padding-top: 10px;
+			cursor: pointer;
+		}
+	}
+}
+
+.modalEliminarAlbum{
+	p{
+		span{
+			font-weight: 700;
+		}
+	}
+	img{
+		padding-top: 20px;
+		width: 200px;
+	}
+}

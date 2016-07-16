@@ -1,0 +1,26 @@
+<section class="container-content cafeteria">
+	<section class="info text-center">
+		<div class="row"> 
+			<div class="col-md-12 section-cumple">
+				<h1 class="titulo-principal">Imágenes Cafetería</h1>
+			</div>
+			<div class="crear-cafeteria">
+				<a ng-click="crearCafeteria('lg')" class="btn btn-primary">
+					<span><i class="fa fa-plus"></i>Añadir Imagen</span>
+				</a>
+			</div>
+			<div class="table-responsive col-md-12">
+				<table class="table table-striped">
+					<tr>
+						<th>Imagen Cafeteria</th>
+						<th>Eliminar Imagen</th>
+					</tr>
+					<tr ng-repeat="foto in cafeteria">
+						<td><img ng-src="{{'data:' + foto.imagen[0].filetype + ';base64,' + foto.imagen[0].base64}}" class="profile-image img-circle"></td>
+						<td><i ng-click="eliminarCafeteria('lg', foto._id)" class="fa fa-close delete"></i></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</section>
+</section>

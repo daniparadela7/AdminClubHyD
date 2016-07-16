@@ -1,0 +1,45 @@
+.nosotros{
+	.crear-nosotros{
+		padding-top: 20px;
+		float: right;
+		i{
+			padding-right: 7px;
+			cursor: pointer;
+		}
+	}
+	.table-responsive{
+		padding-top: 30px;
+		th{
+			text-align: center;
+		}
+		td{
+			font-size: 15px;
+			i{
+				font-size: 20px;
+				cursor: pointer;
+				&.delete{
+					color: red;
+				}
+			}
+			img{
+				width: 100px;
+			}
+		}
+	}
+}
+
+.modalCrearNosotros, .editar-nosotros, .modalEliminarNosotros{
+	font-size: 15px;
+	color: #555;
+	.input-registro{
+		padding: 10px;
+	}
+}
+
+.modalEliminarNosotros{
+	p{
+		span{
+			font-weight: 700;
+		}
+	}
+}

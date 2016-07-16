@@ -1,0 +1,12 @@
+<div class="modalEliminarNoticia">
+    <div class="modal-header text-center">
+        <h3 class="modal-title">Eliminar Noticia: {{noticia.titulo}}</h3>
+    </div>
+    <div class="modal-body">
+        <p class="text-center">¿Seguro que quieres eliminar la noticia <span>{{noticia.titulo}}</span> ?</p>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary" ng-click="cancelar()" type="submit">Cancelar</button>
+        <button class="btn btn-primary" ng-click="eliminarNoticia()" type="submit">Aceptar</button>
+    </div>
+</div>

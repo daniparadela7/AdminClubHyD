@@ -1,0 +1,30 @@
+<section class="container-content galeria">
+	<section class="info text-center">
+		<div class="row"> 
+			<div class="col-md-12 section-cumple">
+				<h1 class="titulo-principal">Álbumes de fotos</h1>
+			</div>
+			<div class="crear-galeria">
+				<a ng-click="crearAlbum('lg')" class="btn btn-primary">
+					<span><i class="fa fa-plus"></i>Añadir Álbum</span>
+				</a>
+			</div>
+			<div class="table-responsive col-md-12">
+				<table class="table table-striped">
+					<tr>
+						<th>Nombre Álbum</th>
+						<th>Imágen Álbum</th>
+						<th>Editar Álbum</th>
+						<th>Eliminar Álbum</th>
+					</tr>
+					<tr ng-repeat="album in albumes">
+						<td>{{album.nombre}}</td>
+						<td><img ng-src="{{'data:' + album.imagen[0].filetype + ';base64,' + album.imagen[0].base64}}" class="profile-image img-circle"></td>
+						<td><a href="/galeria/{{album.pretty_url}}"><i class="fa fa-edit"></i></a></td>
+						<td><i ng-click="eliminarAlbum('lg', album._id)" class="fa fa-close delete"></i></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</section>
+</section>

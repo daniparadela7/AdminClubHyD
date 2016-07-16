@@ -1,0 +1,12 @@
+#footer {
+	background: #172D44;
+	position: relative;
+	color: white;
+	.texto-footer{
+		font-size: 14px;
+		text-align: center;
+		line-height: 44px;
+	}
+}
+
+@include sticky-footer(44px);
