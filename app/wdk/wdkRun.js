@@ -25,7 +25,7 @@ angular.module('app')
 
 	$rootScope.hadasODuendes = function(){
 		var ruta = $location.path();
-		if((ruta.includes('login'))|| (ruta.includes('recover'))){
+		if((ruta.includes('login')) || (ruta.includes('recover'))){
 			$('#wrapper').addClass('wrapper-login');
 			$('.left_col').css('display', 'none');
 		}
@@ -33,7 +33,6 @@ angular.module('app')
 			$('#wrapper').removeClass('wrapper-login');
 			if(!apiService.isAuthentificated()){
 				$location.path('/login');
-				swal("Debes iniciar sesión para acceder a esta sección", "", "error");
 			}
 			else{
 				apiService.getId();

@@ -1,0 +1,34 @@
+<section class="container-content editar-inicio">
+	<section class="info">
+		<div class="row"> 
+			<div class="col-md-12 section-cumple">
+				<h1 class="titulo-principal text-center">Editar Evento</h1>
+			</div>
+			<form ng-submit="editarInicio()">
+	            <div class="row">
+	                <div class="col-md-offset-1 col-md-10 configuracion-inicial">
+	                    <div class="input-registro col-md-12">
+	                        <label>Nombre:</label>
+	                        <input type="text" class="form-control" ng-model="evento.nombre" required>
+	                    </div>
+	                    <div class="input-registro col-md-12">
+	                        <label>Texto:</label>
+	                        <div text-angular ng-model="evento.texto"></div>
+	                    </div>              
+	                    <div class="input-registro col-md-5">
+	                        <label>Imagen Evento:</label>
+	                        <input type="file" ng-model="evento.imagen" base-sixty-four-input>
+	                    </div>
+	                    <div class="input-registro col-md-12">
+	                        <label>Orden:</label>
+	                        <input type="text" class="form-control" ng-model="evento.orden">
+	                    </div>
+	                    <div class="col-md-12 boton-form text-center">
+	                        <button class="btn btn-md btn-primary" type="submit">Editar Evento</button>
+	                    </div>
+	                </div>
+	            </div>
+	        </form>
+		</div>
+	</section>
+</section>
